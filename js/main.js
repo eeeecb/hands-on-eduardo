@@ -14,5 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 userList.appendChild(userCard);
             });
         })
-        .catch(error => console.error('Erro ao carregar os dados:', error));
+        .catch(error => {
+            console.error('Erro ao carregar os dados:', error);
+            loadingMessage.textContent = 'Erro ao carregar dados. Tente novamente mais tarde.';
+        });
 });
