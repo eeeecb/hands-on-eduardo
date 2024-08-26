@@ -17,5 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => {
             console.error('Erro ao carregar os dados:', error);
             loadingMessage.textContent = 'Erro ao carregar dados. Tente novamente mais tarde.';
+            loadingMessage.style.color = 'red';
         });
 });
